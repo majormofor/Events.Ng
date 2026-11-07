@@ -5,4 +5,5 @@ import App from './App';
 import './styles.css';
 const root=document.getElementById('root')!;
 const app=<StrictMode><BrowserRouter><App/></BrowserRouter></StrictMode>;
-if(root.hasChildNodes())hydrateRoot(root,app);else createRoot(root).render(app);
+const normalise=(path:string)=>path.replace(/\/$/,'')||'/';
+if(root.hasChildNodes()&&normalise(root.dataset.route||'')===normalise(location.pathname))hydrateRoot(root,app);else createRoot(root).render(app);
