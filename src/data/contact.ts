@@ -1,0 +1,1 @@
+export const contact = { name:'JUNE EVENTS.NG', tagline:'Your Event, Our Priority.', phone:'+234 708 590 9342', number:'2347085909342', email:'juneevents.ng@gmail.com', tiktok:'https://www.tiktok.com/@june.events.ng' };

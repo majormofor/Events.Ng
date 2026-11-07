@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { bookingSchema } from '../src/lib/booking.ts';
+import { bookingMessage,whatsappUrl,serviceEnquiry } from '../src/lib/whatsapp.ts';
+const base={name:'Ada Okafor',phone:'+234 708 590 9342',email:'',date:'2099-12-31',service:'Professional Ushers',event:'Wedding',location:'Lagos'};
+test('Event enquiry accepts optional counts, validates relevant details',()=>{assert.equal(bookingSchema.safeParse(base).success,true);assert.equal(bookingSchema.safeParse({...base,location:''}).success,false);assert.equal(bookingSchema.safeParse({...base,staff:'-2'}).success,false);});
+test('Tattoo enquiry requires design information, no event or staff count',()=>{const tattoo={...base,service:'Tattoo Artistry',event:'',location:'',style:'Fine-Line Tattoos',placement:'Arm',size:'5cm',design:'A small flower'};assert.equal(bookingSchema.safeParse(tattoo).success,true);assert.equal(bookingSchema.safeParse({...tattoo,design:''}).success,false);});
+test('Makeup enquiry does not need staffing counts',()=>{assert.equal(bookingSchema.safeParse({...base,service:'Makeup Artistry',style:'Soft Glam'}).success,true);assert.equal(bookingSchema.safeParse({...base,service:'Makeup Artistry',style:''}).success,false);});
+test('Invalid contact details and past dates rejected',()=>{for(const change of [{name:''},{phone:'oops'},{email:'wrong'},{date:'2000-01-01'},{date:''}])assert.equal(bookingSchema.safeParse({...base,...change}).success,false);});
+test('WhatsApp encodes details and preserves service, punctuation and newlines',()=>{const message=bookingMessage({'Full name':'Ada & Co','Notes':'Line one\nLine two #1'});const url=new URL(whatsappUrl(message));assert.equal(url.hostname,'wa.me');assert.equal(url.pathname,'/2347085909342');assert.equal(url.searchParams.get('text'),message);assert.match(decodeURIComponent(serviceEnquiry('Bridal Assistants')),/Bridal Assistants/);});
