@@ -6,3 +6,4 @@ dist/
 .prerender/
 *.tmp
 public/__qa.html
+june-events-render-source.zip

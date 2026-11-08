@@ -1,0 +1,36 @@
+{
+  "tool": "Built-in image_gen",
+  "note": "AI-generated illustrative scenes; not photographs of June Events staff or completed projects.",
+  "images": [
+    {
+      "id": "ushers",
+      "prompt": "Use case: photorealistic-natural. Create one premium editorial photograph for a Nigerian event services website, landscape 3:2 composition, natural realistic Black Nigerian adults and skin textures, refined black uniforms with small warm gold accents, elegant Nigerian luxury reception venue, warm daylight and restrained champagne decor, candid professional work rather than posing. Subjects and action legible in a wide card crop, keep faces and meaningful hands within central area. No words, lettering, logos, badges with text, watermark, collage, or borders. This is illustrative marketing imagery, not a documentary of a real company. Two Nigerian professional ushers, a woman and a man in neatly tailored black suits, warmly welcome well-dressed Nigerian guests at the entrance to a wedding reception. One usher gestures naturally toward the seating area. Wide waist-up documentary-style framing, gold chairs softly out of focus.",
+      "file": "public/images/services/ushers.jpg"
+    },
+    {
+      "id": "hostesses",
+      "prompt": "Use case: photorealistic-natural. Generate a single premium editorial landscape 3:2 photograph for a Nigerian event services website. Realistic Black Nigerian adults, natural skin texture, believable hands, candid professional work, clearly legible action in a medium-wide website card crop. No text, logos, watermarks, borders or collage. Do not use a black-and-gold brand palette: no black uniforms, no gold trim or gold decor. Imagined illustrative marketing scene, not actual company staff. Two Nigerian female reception hostesses in elegant modest burgundy uniforms with ivory detailing, welcoming a female Nigerian guest at an ivory reception desk. One hostess smiles and checks a plain guest-list folder while the other offers directions. Refined venue with burgundy florals, ivory walls and silver accents. Bright soft daylight. Colour identity: burgundy and ivory. Visually distinct from event security or planning consultation.",
+      "file": "public/images/services/hostesses-burgundy.jpg"
+    },
+    {
+      "id": "bridal",
+      "prompt": "Use case: photorealistic-natural. Create one premium editorial photograph for a Nigerian event services website, landscape 3:2 composition, natural realistic Black Nigerian adults and skin textures, refined black uniforms with small warm gold accents, elegant Nigerian luxury reception venue, warm daylight and restrained champagne decor, candid professional work rather than posing. Subjects and action legible in a wide card crop, keep faces and meaningful hands within central area. No words, lettering, logos, badges with text, watermark, collage, or borders. This is illustrative marketing imagery, not a documentary of a real company. A Nigerian bridal assistant wearing a neat black outfit carefully adjusts the flowing white wedding dress train of a beautiful adult Nigerian bride before her entrance. Bride in elegant white gown, calm reassuring moment, luxurious bridal preparation room, tasteful modest composition with both women visible.",
+      "file": "public/images/services/bridal.jpg"
+    },
+    {
+      "id": "bouncers",
+      "prompt": "Use case: photorealistic-natural. Generate a single premium editorial landscape 3:2 photograph for a Nigerian event services website. Realistic Black Nigerian adults, natural skin texture, believable hands, candid professional work, clearly legible action in a medium-wide website card crop. No text, logos, watermarks, borders or collage. Do not use a black-and-gold brand palette: no black uniforms, no gold trim or gold decor. Imagined illustrative marketing scene, not actual company staff. Two well-built Nigerian male event security attendants in tailored navy blue suits, light blue shirts and navy ties, with discreet earpieces. One politely guides a well-dressed Nigerian male arriving guest at a modern venue entrance with glass doors and cool grey stone. Calm professional access management, no weapons or aggression or police insignia. Natural daylight. Colour identity: navy blue, pale blue and cool grey. Medium shot faces and guiding hands clearly visible.",
+      "file": "public/images/services/bouncers-navy.jpg"
+    },
+    {
+      "id": "coordinators",
+      "prompt": "Use case: photorealistic-natural. Create one premium editorial photograph for a Nigerian event services website, landscape 3:2 composition, natural realistic Black Nigerian adults and skin textures, refined black uniforms with small warm gold accents, elegant Nigerian luxury reception venue, warm daylight and restrained champagne decor, candid professional work rather than posing. Subjects and action legible in a wide card crop, keep faces and meaningful hands within central area. No words, lettering, logos, badges with text, watermark, collage, or borders. This is illustrative marketing imagery, not a documentary of a real company. A Nigerian female on-site event coordinator in a tailored black blazer with a discreet earpiece, holding a plain clipboard while discussing event timing with a Nigerian male catering supervisor in an elegant reception hall. Staff and set tables softly visible behind them. Clear sense of active event-day coordination, medium framing.",
+      "file": "public/images/services/coordinators.jpg"
+    },
+    {
+      "id": "planning",
+      "prompt": "Use case: photorealistic-natural. Generate a single premium editorial landscape 3:2 photograph for a Nigerian event services website. Realistic Black Nigerian adults, natural skin texture, believable hands, candid professional work, clearly legible action in a medium-wide website card crop. No text, logos, watermarks, borders or collage. Do not use a black-and-gold brand palette: no black uniforms, no gold trim or gold decor. Imagined illustrative marketing scene, not actual company staff. A Nigerian woman event planner wearing an elegant sage green suit sits with a Nigerian engaged couple at an airy contemporary planning studio table, reviewing a wedding concept on a tablet without visible writing. Cream stationery, terracotta and sage fabric samples, white flowers with green foliage. Couple wear warm neutral casual-smart clothing. Relaxed collaborative planning meeting before the event. Colour identity: sage green, cream and terracotta, wood furniture, natural window light. Visually distinct from an event-day reception.",
+      "file": "public/images/services/planning-sage.jpg"
+    }
+  ]
+}

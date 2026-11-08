@@ -1,0 +1,8 @@
+{
+  "note": "Collected from the user-supplied TikTok portfolio at the user's request. Original photographs and cropped video stills; no tattoo artwork was generated or retouched. Contact details unchanged.",
+  "images": [
+    {"files": ["public/images/tattoos/rose-forearm.jpeg", "public/images/tattoos/rose-detail.jpeg"], "source": "https://www.tiktok.com/@juneartistry/photo/7548976731818937621", "type": "original photographs"},
+    {"file": "public/images/tattoos/heartbeat-hand.png", "source": "https://www.tiktok.com/@juneartistry/video/7558377971535416594", "type": "cropped video still"},
+    {"file": "public/images/tattoos/butterfly-semicolon.png", "source": "https://www.tiktok.com/@juneartistry/video/7552821005601836308", "type": "cropped video still"}
+  ]
+}

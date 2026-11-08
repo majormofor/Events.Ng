@@ -1,6 +1,8 @@
 # JUNE EVENTS.NG
 
-A responsive black, gold and cream website for event staffing, planning, coordination, makeup and tattoo enquiries. The site uses the business’s supplied photographs and flyers. Creative portfolio illustrations are explicitly labelled placeholders. There are no fabricated customer reviews, prices, qualifications or founder credentials.
+**Deploying on Render?** Follow [RENDER-DEPLOYMENT.md](RENDER-DEPLOYMENT.md). The included `render.yaml` configures the site and its routes.
+
+A responsive black, gold and cream website for event staffing, planning, coordination, nail technician and semi-permanent tattoo enquiries. The site uses the business’s supplied photographs and flyers. Creative portfolio illustrations are explicitly labelled placeholders. There are no fabricated customer reviews, prices, qualifications or founder credentials.
 
 ## Getting started
 
@@ -39,15 +41,15 @@ scripts/prerender.mjs  route HTML, SEO metadata and sitemap generation
 scripts/booking.test.ts  meaningful enquiry validation tests
 ```
 
-Routes: `/`, `/about`, `/founder`, `/services`, `/tattoo`, `/makeup`, `/gallery`, `/testimonials`, `/contact`, `/privacy`, plus the custom not-found page. Each known route has prerendered HTML so its content and metadata are available before JavaScript runs. The React app hydrates those pages for interactive navigation and forms.
+Routes: `/`, `/about`, `/founder`, `/services`, `/tattoo`, `/nails`, `/gallery`, `/testimonials`, `/contact`, `/privacy`, plus the custom not-found page. Each known route has prerendered HTML so its content and metadata are available before JavaScript runs. The React app hydrates those pages for interactive navigation and forms.
 
 ## Updating content
 
 - **Colours:** edit `--gold`, `--champagne`, `--cream`, and the Tailwind theme values in `src/styles.css`. Preview both light and dark sections after changes.
 - **Contacts and social account:** edit `src/data/contact.ts`. The WhatsApp number uses international digits-only format. Forms, links and SEO organization metadata share those details.
-- **Founder:** edit `founder` in `src/data/business.ts`. Add the real name, approved biography and personal message, then set `verified: true`. The supplied owner portrait is already used; replace `public/images/founder.jpeg` or change `photo`. Do not remove draft labels before approval.
-- **Services:** edit `src/data/services.ts`. Change descriptions and responsibilities without changing page logic. Proposed makeup and tattoo categories need the owner’s confirmation. No service prices or packages are assumed.
-- **Gallery:** copy photographs you have permission to publish into `public/images/`. Add entries to `gallery` in `src/data/gallery.ts`: `src`, `title`, `category`, and `note`. Use descriptive titles as image alt text. Add authentic makeup and tattoo items through `creativePortfolio`; remove the placeholder flag and update the page’s placeholder notices when replacing illustrations with real work.
+- **Founder:** edit `founder` in `src/data/business.ts`. June’s name, brand introduction and message are already included; edit these whenever needed. The supplied owner portrait is already used; replace `public/images/founder.jpeg` or change `photo`. 
+- **Services:** edit `src/data/services.ts`. Change descriptions and responsibilities without changing page logic. Review the nail technician and semi-permanent tattoo categories when changing the service menu. No service prices or packages are assumed.
+- **Gallery:** copy photographs you have permission to publish into `public/images/`. Add entries to `gallery` in `src/data/gallery.ts`: `src`, `title`, `category`, and `note`. Use descriptive titles as image alt text. Add authentic nail technician and semi-permanent tattoo items through `creativePortfolio`; remove the placeholder flag and update the page’s placeholder notices when replacing illustrations with real work.
 - **Testimonials:** add only approved, genuine feedback to `testimonials` in `src/data/business.ts`, using the documented `Testimonial` type. Fields are name, review, event and date; photo and rating are optional. With no entries, the website shows a feedback invitation. Obtain permission before publishing names or photographs.
 - **Logo:** the header uses an editable typographic wordmark in `Logo()` in `src/App.tsx`. The supplied full logo is retained at `public/images/logo.jpeg` and used in organization metadata. Replace the wordmark with an image if desired; keep it readable at mobile sizes. The favicon is `public/favicon.svg`.
 - **WhatsApp wording:** edit `serviceEnquiry`, `bookingMessage` and `whatsappUrl` in `src/lib/whatsapp.ts`. The form prepares an enquiry; the customer must review and send it in WhatsApp. No booking is automatically confirmed, and no file is attached automatically.
@@ -57,7 +59,7 @@ Routes: `/`, `/about`, `/founder`, `/services`, `/tattoo`, `/makeup`, `/gallery`
 
 The initial version has no backend, payment collection, analytics or customer database. Form input stays in memory until used to prepare the WhatsApp link. It is not written to localStorage. Once a customer sends an enquiry, WhatsApp and the business handle it separately. Confirm the business’s privacy and retention practices before public launch and update `/privacy` accordingly.
 
-Forms validate contact details, dates and relevant fields. Tattoo enquiries do not require event details or staffing numbers. Makeup enquiries do not require staff or guest counts. If WhatsApp is blocked, the prepared message remains visible with a copy button and a retry link.
+Forms validate contact details, dates and relevant fields. Tattoo enquiries do not require event details or staffing numbers. Nail care enquiries do not require staff or guest counts. If WhatsApp is blocked, the prepared message remains visible with a copy button and a retry link.
 
 ## Deploy to Vercel
 
@@ -80,7 +82,7 @@ The Sites-hosted version uses `.openai/hosting.json` with its own project identi
 
 ## Before public launch
 
-Confirm the founder name, biography and message; creative-service availability and categories; tattoo artist practices and credentials; publication rights for supplied photos and flyer artwork; enquiry retention arrangements; and the final domain. Replace the labelled creative portfolio illustrations with real work when available. Verified testimonials are optional.
+Review creative-service availability and categories; tattoo artist practices and credentials; publication rights for supplied photos and flyer artwork; enquiry retention arrangements; and the final domain. Replace the labelled creative portfolio illustrations with real work when available. Verified testimonials are optional.
 
 ## Troubleshooting
 
